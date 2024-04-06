@@ -21,12 +21,16 @@
 </head>
 <body>
     <header>
+        <a name="top"></a>
         <!--cabeçalho-->
         <center><h1>Bob Marley</h1></center>
     </header>
     <nav>
         <!--menu de navegação-->
         <center><p>Robert Nesta Marley</p>
+        <hr>
+        <center><small><a href="discografia.html" target="_blank">Discografia</a></small></center>
+        <hr>
         <img src="https://uploads.metropoles.com/wp-content/uploads/2016/05/11133915/bob-marley-reprodu%C3%A7%C3%A3o-internet.jpg" alt=""width="700px"></center>
     </nav>
     <hr> <!--Linha-->
@@ -39,7 +43,7 @@
                 Devido a gravidez, Cedella e Norval se casaram. Entretanto, Norval viajou para Kingston logo após o nascimento do filho, parando de responder as cartas de sua esposa e abandonando mãe e filho por alguns anos.
                 Marley passou a infância trabalhando na propriedade da família de segunda à sábado e frequentando uma pequena escola em Nine Mile. </p>
                 <center><img src="Imagem Bob Marley criança.jpg" alt=""></center>
-        <h2><a href="discografia.html">Música</a></h2>
+        <h2><a href="discografia.html" target="_blank">Música</a></h2>
         <p>Em 1962, Marley passou a frequentar a casa de John Higgs, um famoso cantor jamaicano que dava aulas gratuitas para crianças. Nessa época, Bob conheceu Leslie Kong, um empresário sinojamaicano que no ano anterior havia lançado o primeiro trabalho de Jimmy Cliff e a gravadora começava a ganhar dinheiro.
             Com este produtor musical, Marley chega a gravar do singles solo: "Judge Not" e "One Cup of Coffe". Entretanto, os compactos não fazem sucesso.
             Após a experiência com Kong, Marley se junta à colegas e montam uma banda. O conjunto é batizado de The Teenagers. Eles conseguem um contrato com a gravadora de Coxsone Dodd, a Studio One. Entretanto, precisam trocar de nome pois já existia um grupo com o mesmo nome: escolhem, assim, The Wailing Wailers.
@@ -99,27 +103,27 @@
         <fieldset>
             <legend>Informações Pessoais</legend>
         <label for="">Nome: </label>
-        <input type="text" name="nome" id="nome">
+        <input type="text" name="nome" id="nome" required>
         <br>
         <br>
         <label for="">Email: </label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" required>
         <br>
         <br>
         <label for="">Senha: </label>
-        <input type="password" name="senha" id="senha">
+        <input type="password" name="senha" id="senha" required>
         <br>
         <br>
         <label for="">Telefone: </label>
-        <input type="tel" name="telefone" id="telefone" placeholder="xx 12345-6789">
-        <br>
+        <input type="tel" name="telefone" id="telefone" placeholder="xx-12345-6789" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required>
+        <br>    
         <br>
         <label for="">Idade: </label>
-        <input type="number" name="idade" id="idade" min="0" max="" step="1">
+        <input type="number" name="idade" id="idade" min="0" max="" step="1" required>
         <br>
         <br>
         <label for="">Data de Aniversário: </label>
-        <input type="date" name="data" id="data">
+        <input type="date" name="data" id="data" required>
         </fieldset>
     </section>
     <br>
@@ -129,7 +133,7 @@
             <label>Genêro Musical</label>
             <select name="genero" id="genero">
                 <option value="Rock">Rock</option>
-                <option value="Reggae">Reggae</option>
+                <option value="Reggae" selected>Reggae</option> 
                 <option value="MPB">MPB</option>
                 <option value="KPOP">KPOP</option>
             </select>
@@ -163,11 +167,11 @@
     <hr>
     </main>
     <footer>
-        <a href="https://www.instagram.com/thewailersofficial/">Instagram</a>
+        <a href="https://www.instagram.com/thewailersofficial/" target="_blank">Instagram (The Wailers)</a>
         <br>
-        <a href="https://open.spotify.com/intl-pt/artist/6uSKeCyQEhvPC2NODgiqFE">Spotify</a>
+        <a href="https://open.spotify.com/intl-pt/artist/6uSKeCyQEhvPC2NODgiqFE" target="_blank">Spotify</a>
         <br>
-        <a href="Biografia.html">Voltar para o topo da página</a>    <!--rodapé-->
+        <button><a href="#top">Voltar para o topo da página</a></button>   <!--rodapé-->
     </footer>
 </body>
 </html> 
